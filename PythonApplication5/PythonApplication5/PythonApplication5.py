@@ -16,24 +16,23 @@ while True:
             numbers.append(add)
             print(numbers)
 
-            if input('do you wish to add more numbers? (y or n) ') == 'n':
+            if input('Do you wish to add more numbers? \nPress any key for yes \nPress n for no \n') == 'n':
                 break
-            else:
-                print("I didn't understand that")
+      
 
         print(numbers)
         if input('Confirm numbers? (y or n) ') == 'y':
             break
 
 
-    print('Select sorting algorithm:\n[1]bubble sort\n[2]insertion sort\n[3]shell sort\n[4]merge sort\n[5]bucket sort\n[6]radix sort\n[7]selection sort\n[8]quick sort')
+    print('Select sorting algorithm:\n[1] bubble sort\n[2] insertion sort\n[3] shell sort\n[4] merge sort\n[5] bucket sort\n[6] radix sort\n[7] selection sort\n[8] quick sort')
     algo = int(input())
 
     if algo == 1:
         # bubble_sort
 
         def bubble_sort(numbers):
-
+            
             for i in range(len(numbers) - 1, 0, -1):
 
                 for j in range(i):
@@ -45,9 +44,9 @@ while True:
 
                         numbers[j + 1] = temporary
 
-
+        
         bubble_sort(numbers)
-
+        
         print("bubble sort: ")
 
         print(numbers)
